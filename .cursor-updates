@@ -8,3 +8,6 @@
 - Captured screenshot of Button component stories in Storybook
 - Created PetActionGroup molecule with Button atoms and optional icons, plus stories showing different button combinations
 - Created PetImageCard molecule with Image component and text overlay, plus stories showing different overlay positions
+- Created AdoptionPage and PetDashboardPage components with their corresponding Storybook stories, setting up the main page structure for pet adoption and dashboard views.
+- Created AboutPage story with responsive layout and informative content about the Virtual Pet Simulator
+- Implemented PetInteraction story demonstrating stat updates through Feed and Play actions with visual feedback
