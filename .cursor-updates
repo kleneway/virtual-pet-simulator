@@ -6,10 +6,8 @@
 - Fixed dynamic route warning by adding force-dynamic config to root page
 - Added Storybook with Button component and stories, updated .cursorrules with Storybook guidelines
 - Captured screenshot of Button component stories in Storybook
-- Created Leaderboard organism component with responsive design, dark mode support, and sample data display for pet rankings.
-- Created Button atom component with variants, sizes, and loading states, along with comprehensive Storybook stories.
-- Created TextField atom component with label, placeholder, error state support and dark mode styling
-- Created AdoptionForm organism with validation and toast notifications
-- Created PetDashboard organism with stats display and action buttons
-- Added Storybook stories for both organisms with multiple variants
-- Created Icon atom component using lucide-react with support for different sizes, colors, and hover states.
+- Created PetActionGroup molecule with Button atoms and optional icons, plus stories showing different button combinations
+- Created PetImageCard molecule with Image component and text overlay, plus stories showing different overlay positions
+- Created AdoptionPage and PetDashboardPage components with their corresponding Storybook stories, setting up the main page structure for pet adoption and dashboard views.
+- Created ProgressBar atom component with percentage prop and custom color support, along with Storybook stories for different states
+- Created TextField atom component with label, error state, and disabled state support, along with comprehensive Storybook stories

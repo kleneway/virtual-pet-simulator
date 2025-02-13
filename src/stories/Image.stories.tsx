@@ -15,7 +15,7 @@ type Story = StoryObj<typeof ImageAtom>;
 
 export const Square: Story = {
   args: {
-    src: "https://placekitten.com/200/200",
+    src: "https://placecats.com/200/200",
     alt: "A cute kitten",
     width: 200,
     height: 200,
@@ -25,7 +25,7 @@ export const Square: Story = {
 
 export const Circle: Story = {
   args: {
-    src: "https://placekitten.com/300/300",
+    src: "https://placecats.com/300/300",
     alt: "A cute kitten in a circle",
     width: 300,
     height: 300,
@@ -35,7 +35,7 @@ export const Circle: Story = {
 
 export const SmallSize: Story = {
   args: {
-    src: "https://placekitten.com/100/100",
+    src: "https://placecats.com/100/100",
     alt: "A small kitten image",
     width: 100,
     height: 100,

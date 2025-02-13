@@ -1,6 +1,6 @@
 "use client";
 
-import { Image } from "./Image";
+import Image from "next/image";
 
 interface PetImageCardProps {
   imageUrl: string;
@@ -23,6 +23,8 @@ export const PetImageCard = ({
         src={imageUrl}
         alt={`Pet ${petName}`}
         className="w-full h-full object-cover"
+        width={300}
+        height={300}
       />
       <div
         className={`absolute ${

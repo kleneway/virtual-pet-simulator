@@ -29,7 +29,7 @@ type Story = StoryObj<typeof meta>;
 export const Default: Story = {
   args: {
     petName: "Fluffy",
-    imageUrl: "https://placekitten.com/400/400",
+    imageUrl: "https://placecats.com/400/400",
     stats: {
       hunger: 75,
       happiness: 90,

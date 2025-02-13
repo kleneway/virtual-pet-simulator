@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { PetActionGroup } from "@/components/PetActionGroup";
+import { PetActionGroup } from "@/components/molecules/PetActionGroup";
 
 const meta: Meta<typeof PetActionGroup> = {
   title: "Molecules/PetActionGroup",
@@ -8,70 +8,47 @@ const meta: Meta<typeof PetActionGroup> = {
     layout: "centered",
   },
   tags: ["autodocs"],
-};
+} satisfies Meta<typeof PetActionGroup>;
 
 export default meta;
-type Story = StoryObj<typeof PetActionGroup>;
+type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
   args: {
     actions: [
       {
         label: "Feed",
-        icon: "utensils",
         onClick: () => console.log("Feed clicked"),
       },
       {
         label: "Play",
-        icon: "play",
         onClick: () => console.log("Play clicked"),
       },
       {
         label: "Clean",
-        icon: "trash",
         onClick: () => console.log("Clean clicked"),
       },
     ],
   },
 };
 
-export const WithDisabledAction: Story = {
+export const Disabled: Story = {
   args: {
     actions: [
       {
         label: "Feed",
-        icon: "utensils",
         onClick: () => console.log("Feed clicked"),
+        disabled: true,
       },
       {
         label: "Play",
-        icon: "play",
         onClick: () => console.log("Play clicked"),
         disabled: true,
       },
       {
         label: "Clean",
-        icon: "trash",
         onClick: () => console.log("Clean clicked"),
-      },
-    ],
-  },
-};
-
-export const NoIcons: Story = {
-  args: {
-    actions: [
-      {
-        label: "Feed",
-        onClick: () => console.log("Feed clicked"),
-      },
-      {
-        label: "Play",
-        onClick: () => console.log("Play clicked"),
-      },
-      {
-        label: "Clean",
-        onClick: () => console.log("Clean clicked"),
+        disabled: true,
       },
     ],
   },

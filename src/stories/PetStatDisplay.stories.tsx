@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { PetStatDisplay } from "../components/PetStatDisplay";
+import { PetStatDisplay } from "@/components/molecules/PetStatDisplay";
 
 const meta: Meta<typeof PetStatDisplay> = {
   title: "Molecules/PetStatDisplay",
