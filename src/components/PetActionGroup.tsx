@@ -1,7 +1,6 @@
 "use client";
 
 import { Button } from "./Button";
-import { Icon } from "./Icon";
 
 interface PetAction {
   label: string;
@@ -28,7 +27,6 @@ export const PetActionGroup = ({
           disabled={action.disabled}
           className="flex items-center gap-2"
         >
-          {action.icon && <Icon name={action.icon} className="w-4 h-4" />}
           {action.label}
         </Button>
       ))}
