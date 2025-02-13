@@ -6,10 +6,4 @@
 - Fixed dynamic route warning by adding force-dynamic config to root page
 - Added Storybook with Button component and stories, updated .cursorrules with Storybook guidelines
 - Captured screenshot of Button component stories in Storybook
-- Created PetActionGroup molecule with Button atoms and optional icons, plus stories showing different button combinations
-- Created PetImageCard molecule with Image component and text overlay, plus stories showing different overlay positions
-- Created AdoptionPage and PetDashboardPage components with their corresponding Storybook stories, setting up the main page structure for pet adoption and dashboard views.
-- Created AboutPage story with responsive layout and informative content about the Virtual Pet Simulator
-- Implemented PetInteraction story demonstrating stat updates through Feed and Play actions with visual feedback
-- Created Image atom component with circle/square variants and error handling, plus Storybook stories showing different sizes and states
-- Created PetStatDisplay molecule combining ProgressBar with labels, plus Storybook stories showing various stat displays
+- Created Leaderboard organism component with responsive design, dark mode support, and sample data display for pet rankings.
