@@ -1,6 +1,6 @@
 "use client";
 
-import { ProgressBar } from "./ProgressBar";
+import { ProgressBar } from "../ProgressBar";
 
 interface PetStatDisplayProps {
   label: string;
