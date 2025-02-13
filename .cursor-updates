@@ -7,3 +7,8 @@
 - Added Storybook with Button component and stories, updated .cursorrules with Storybook guidelines
 - Captured screenshot of Button component stories in Storybook
 - Created Leaderboard organism component with responsive design, dark mode support, and sample data display for pet rankings.
+- Created Button atom component with variants, sizes, and loading states, along with comprehensive Storybook stories.
+- Created TextField atom component with label, placeholder, error state support and dark mode styling
+- Created AdoptionForm organism with validation and toast notifications
+- Created PetDashboard organism with stats display and action buttons
+- Added Storybook stories for both organisms with multiple variants
