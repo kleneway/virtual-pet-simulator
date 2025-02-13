@@ -1,19 +1,16 @@
 import React from "react";
 
-interface ButtonProps {
-  children: React.ReactNode;
+interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: "primary" | "secondary";
   size?: "sm" | "md" | "lg";
-  onClick?: () => void;
-  className?: string;
 }
 
 export const Button: React.FC<ButtonProps> = ({
   children,
   variant = "primary",
   size = "md",
-  onClick,
   className = "",
+  ...props
 }) => {
   const baseStyles = "rounded-lg font-medium transition-all duration-200";
 
@@ -32,8 +29,8 @@ export const Button: React.FC<ButtonProps> = ({
 
   return (
     <button
-      onClick={onClick}
       className={`${baseStyles} ${variantStyles[variant]} ${sizeStyles[size]} ${className}`}
+      {...props}
     >
       {children}
     </button>

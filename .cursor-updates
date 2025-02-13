@@ -6,3 +6,5 @@
 - Fixed dynamic route warning by adding force-dynamic config to root page
 - Added Storybook with Button component and stories, updated .cursorrules with Storybook guidelines
 - Captured screenshot of Button component stories in Storybook
+- Created PetActionGroup molecule with Button atoms and optional icons, plus stories showing different button combinations
+- Created PetImageCard molecule with Image component and text overlay, plus stories showing different overlay positions

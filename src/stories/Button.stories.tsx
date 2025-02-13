@@ -1,9 +1,9 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { Button } from "../components/Button";
+import { Button } from "@/components/atoms/Button/Button";
 import { action } from "@storybook/addon-actions";
 
-const meta = {
-  title: "Components/Button",
+const meta: Meta<typeof Button> = {
+  title: "Atoms/Button",
   component: Button,
   parameters: {
     layout: "centered",
@@ -33,6 +33,12 @@ const meta = {
     onClick: {
       description: "Function called when the button is clicked",
     },
+    isLoading: {
+      description: "Indicates if the button is in a loading state",
+    },
+    disabled: {
+      description: "Indicates if the button is disabled",
+    },
   },
 } satisfies Meta<typeof Button>;
 
@@ -43,8 +49,6 @@ export const Primary: Story = {
   args: {
     children: "Primary Button",
     variant: "primary",
-    size: "md",
-    onClick: action("primary-clicked"),
   },
 };
 
@@ -52,26 +56,34 @@ export const Secondary: Story = {
   args: {
     children: "Secondary Button",
     variant: "secondary",
-    size: "md",
-    onClick: action("secondary-clicked"),
   },
 };
 
 export const Small: Story = {
   args: {
     children: "Small Button",
-    variant: "primary",
     size: "sm",
-    onClick: action("small-clicked"),
   },
 };
 
 export const Large: Story = {
   args: {
     children: "Large Button",
-    variant: "primary",
     size: "lg",
-    onClick: action("large-clicked"),
+  },
+};
+
+export const Loading: Story = {
+  args: {
+    children: "Loading Button",
+    isLoading: true,
+  },
+};
+
+export const Disabled: Story = {
+  args: {
+    children: "Disabled Button",
+    disabled: true,
   },
 };
 
