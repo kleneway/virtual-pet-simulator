@@ -12,3 +12,4 @@
 - Created AdoptionForm organism with validation and toast notifications
 - Created PetDashboard organism with stats display and action buttons
 - Added Storybook stories for both organisms with multiple variants
+- Created Icon atom component using lucide-react with support for different sizes, colors, and hover states.
